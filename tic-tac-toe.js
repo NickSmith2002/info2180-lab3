@@ -12,6 +12,15 @@ window.onload = function () {
       let square = squares[i];
   
       square.classList.add('square');
+
+    //Exercise 3-  Hover Feature is implemented
+    square.addEventListener("mouseover", function(){
+        square.classList.add("hover");
+    });
+
+    square.addEventListener('mouseleave', function(){
+        square.classList.remove("hover");
+    });
     
     //Exercise 2- Add an X or O to square when clicked
       square.addEventListener('click', function () {
@@ -31,4 +40,6 @@ window.onload = function () {
         }
       });
     }
+
+    
 }
