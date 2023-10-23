@@ -37,7 +37,7 @@ window.onload = function () {
   
           playerX = !playerX; // Switch players after each move
 
-          checkWin(boardState);
+          checkWin();
   
         }
       });
